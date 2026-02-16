@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int count = 5;
+    int logs[count];
+
+    cout << "Enter the step counts : " << endl;
+    for (int pos = 0; pos < count; pos++)
+    {
+        cin >> logs[pos];
+    }
+
+    cout << "Steps: ";
+    for (int pos = 0; pos < count; pos++)
+    {
+        cout << logs[pos] << " ";
+    }
+    cout << endl;
+
+    int sum = 0;
+    for (int pos = 0; pos < count; pos++)
+    {
+        sum += logs[pos];
+    }
+
+    cout << "Total: " << sum << endl;
+
+    return 0;
+}
